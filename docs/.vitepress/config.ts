@@ -1,9 +1,7 @@
-import mathjax3 from 'markdown-it-mathjax3';
+import mathjax3 from 'markdown-it-mathjax3'
 import { defineConfig } from 'vitepress'
 import Unocss from 'unocss/vite'
-
 const customElements = ['mjx-container'];
-
 export default defineConfig({
   base: '/Algorithm/',
   title: 'Algorithm Note',
@@ -11,7 +9,7 @@ export default defineConfig({
   appearance: true,
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    // ['script', { async: '', src: "//finicounter.eu.org/finicounter.js" }],
+    ['script', { async: '', src: "//finicounter.eu.org/finicounter.js" }],
   ],
   vite: {
     plugins: [
