@@ -1,3 +1,73 @@
+/* naive-ui 's theme */
 * {
   transition: background-color 0s !important;
+}
+
+:root {
+  --vp-custom-block-info-bg: #90cdf422;
+  --vp-custom-block-info-text: default;
+  --vp-custom-block-info-border: var(--vp-c-blue);
+  --vp-custom-block-tip-bg: #10b98111;
+  --vp-custom-block-tip-text: default;
+  --vp-custom-block-warning-bg: #d9770611;
+  --vp-custom-block-warning-text: default;
+  --vp-custom-block-danger-bg: #f43f5e11;
+  --vp-custom-block-danger-text: default;
+  --vp-c-blue: #116afa;
+  --vp-c-purple: #773dfe;
+}
+
+.dark {
+  --vp-c-blue: #90cdf4;
+  --vp-c-purple: #d6bcfa;
+}
+
+/* vitepress custom-block */
+div.info.custom-block>p.custom-block-title {
+  color: var(--vp-c-blue);
+  border-bottom: 1px solid var(--vp-c-blue);
+  font-size: medium;
+  width: max-content
+}
+
+div.tip.custom-block>p.custom-block-title {
+  color: var(--vp-c-green);
+  border-bottom: 1px solid var(--vp-c-green);
+  font-size: medium;
+  width: max-content
+}
+
+div.warning.custom-block>p.custom-block-title {
+  color: var(--vp-c-yellow);
+  border-bottom: 1px solid var(--vp-c-yellow);
+  font-size: medium;
+  width: max-content
+}
+
+div.danger.custom-block>p.custom-block-title {
+  color: var(--vp-c-red);
+  border-bottom: 1px solid var(--vp-c-red);
+  font-size: medium;
+  width: max-content
+}
+
+.vp-doc .custom-block code {
+  font-weight: normal;
+  color: var(--vp-c-purple);
+  background-color: transparent;
+}
+
+.custom-block {
+  overflow: scroll;
+}
+
+/* image */
+img {
+  border-radius: 8px;
+  -webkit-user-drag: none;
+}
+
+/* equation */
+mjx-container>svg {
+  display: inline-block;
 }
