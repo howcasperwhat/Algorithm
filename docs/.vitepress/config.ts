@@ -37,11 +37,8 @@ export default defineConfig({
     logo: 'img/logo.png',
     outline: 'deep',
     outlineTitle: '本页目录',
-    search: {
-      provider: 'local'
-    },
-    nav: [
-    ],
+    search: { provider: 'local' },
+    nav: [],
     sidebar: [
       {
         text: '代码模板',
@@ -59,10 +56,17 @@ export default defineConfig({
             text: 'prim',
             link: '/paradigm/prim.md'
           }, {
+            text: 'floyd',
+            link: '/paradigm/floyd.md'
+          }, {
             text: '背包问题',
             link: '/paradigm/package/index.md',
-            items: [
-            ]
+          }, {
+            text: '求素数',
+            link: '/paradigm/prime.md'
+          }, {
+            text: '数学基础知识',
+            link: '/paradigm/math.md'
           }
         ]
       }, {
